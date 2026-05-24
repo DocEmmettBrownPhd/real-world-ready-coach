@@ -1,7 +1,3 @@
 # Submission Summary
 
-**Real World Ready Coach** is a folder-based AI coach for young adults ages 17–24 leaving home for the first time. It coaches users through seven branches of adult readiness — from establishing income and opening a bank account, to renting an apartment, buying a car, and preparing for job interviews.
-
-The coach asks before it answers. It pushes back on risky decisions, establishes the source of income before building any budget, handles cosigners separately for apartments and cars, and goes deep on lease and loan review. Mental health is woven through every branch, not bolted on at the end.
-
-With one more week: a personalized progress tracker so users know exactly which branch they are on and what comes next.
+Real World Ready Coach is a folder-based AI coach for young adults ages 17–24 leaving home for the very first time. It guides users through seven life branches — income, banking, renting, cars, jobs, health, and grocery — asking before it answers and pushing back on risky decisions. A gap assessment identifies what the user already has. A goal interview captures what they actually want. A weekly progress tracker logs accomplishments and gaps between sessions. Research draws from CFPB, HUD, FDIC, and peer-reviewed coaching frameworks. Mental health is woven through every branch. With one more week: automated branch-to-branch milestone triggers.
