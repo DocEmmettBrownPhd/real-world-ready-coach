@@ -9,7 +9,50 @@ This file is how the coach remembers where you are between conversations.
 - Replace this file in your Claude Project with the new version
 - Next time you check in, the coach picks up exactly where you left off
 
-**To start a check-in, type:** `Check in`
+**To check in, type:** `Check in`
+
+---
+
+## About Me
+
+Name: —
+Living situation: —
+Self-rating (1–10): —
+What feels most overwhelming: —
+Onboarding completed: No
+
+---
+
+## What I Already Have
+
+| Area | Status | Notes |
+|------|--------|-------|
+| Income | — | |
+| Bank account (checking) | — | |
+| Bank account (savings) | — | |
+| Budget | — | |
+| Housing | — | |
+| Car | — | |
+| Car loan | — | |
+| Job | — | |
+| Credit score checked | — | |
+| Health insurance | — | |
+
+*Filled in during first conversation with the coach.*
+
+---
+
+## My Goals
+
+| Goal Area | What I Want | Timeline |
+|-----------|-------------|----------|
+| Living situation | — | — |
+| Money / budget | — | — |
+| Transportation | — | — |
+| Career / work | — | — |
+| Big picture | — | — |
+
+*Filled in during first conversation with the coach.*
 
 ---
 
@@ -23,9 +66,9 @@ Last check-in: Never
 
 ## Weekly Summary
 
-| Week | Dates | Accomplished | Not Done |
-|------|-------|-------------|----------|
-| — | — | No check-ins yet | — |
+| Week | Dates | Accomplished | Not Done | Notes |
+|------|-------|-------------|----------|-------|
+| — | — | No check-ins yet | — | — |
 
 ---
 
@@ -34,6 +77,7 @@ Last check-in: Never
 ### Branch 1 — Still in the Nest
 - [ ] Named what feels most overwhelming
 - [ ] Told the coach where I am starting from
+- [ ] Completed gap assessment and goal interview
 - [ ] Identified the first branch to work on
 
 ### Branch 2 — Money In
@@ -83,6 +127,16 @@ Last check-in: Never
 - [ ] Credit score building on track (on-time payments, low utilization)
 - [ ] Annual physical and dental checkup scheduled
 - [ ] Regular exercise, sleep, and mental health habits in place
+
+---
+
+## Gaps to Fill
+
+*The coach identifies the 2–3 most important missing pieces after the gap assessment and records them here.*
+
+1. —
+2. —
+3. —
 
 ---
 
