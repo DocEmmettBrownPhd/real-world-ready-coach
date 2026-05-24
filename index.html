@@ -18,16 +18,12 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--sky); color: var(--dark); overflow-x: hidden; font-size: 16px; line-height: 1.6; }
-
-  /* NAV */
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px var(--shadow); }
   .nav-logo { font-size: 1rem; font-weight: 700; color: var(--dark); }
   .nav-logo span { color: var(--accent); }
   .nav-links { display: flex; gap: 28px; list-style: none; }
   .nav-links a { text-decoration: none; color: var(--mid); font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
   .nav-links a:hover { color: var(--accent); }
-
-  /* HERO */
   .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 100px 24px 60px; text-align: center; background: linear-gradient(160deg, #dbeeff 0%, #e8f4fd 50%, #f0fae8 100%); }
   .bird-wrap { margin-bottom: 28px; animation: floatIn 0.9s ease-out both; }
   @keyframes floatIn { from { opacity:0; transform:translateY(-24px); } to { opacity:1; transform:translateY(0); } }
@@ -40,15 +36,11 @@
   @keyframes glow { 0%,100% { box-shadow: 0 4px 18px rgba(245,166,35,0.4); } 50% { box-shadow: 0 4px 28px rgba(245,166,35,0.7); } }
   .btn-outline { background: white; color: var(--dark); border: 2px solid #ddd; padding: 13px 26px; border-radius: 50px; font-size: 0.97rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s, border-color 0.2s; }
   .btn-outline:hover { transform: translateY(-2px); border-color: var(--accent); }
-
-  /* SECTIONS */
   section { padding: 72px 24px; }
-  .inner { max-width: 900px; margin: 0 auto; }
+  .inner { max-width: 860px; margin: 0 auto; }
   .label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; color: var(--accent); text-transform: uppercase; margin-bottom: 10px; }
   h2 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; margin-bottom: 14px; }
-  .sub { font-size: 1rem; color: var(--mid); max-width: 580px; }
-
-  /* JOURNEY */
+  .sub { font-size: 1rem; color: var(--mid); max-width: 600px; }
   #journey { background: white; }
   .tree { margin-top: 48px; }
   .branch-row { display: flex; align-items: center; margin-bottom: 32px; opacity: 0; transform: translateX(-36px); transition: opacity 0.55s ease, transform 0.55s ease; }
@@ -67,40 +59,35 @@
   .bbird { width: 56px; height: 56px; flex-shrink: 0; position: relative; }
   .bbird svg { width: 100%; height: 100%; }
   .cbadge { position: absolute; bottom: -6px; right: -6px; background: white; border: 2px solid #eee; border-radius: 20px; padding: 2px 7px; font-size: 0.68rem; white-space: nowrap; box-shadow: 0 2px 6px var(--shadow); }
-
-  /* SETUP */
   #setup { background: var(--sky); }
-  .account-box { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 32px 0; }
-  @media (max-width: 600px) { .account-box { grid-template-columns: 1fr; } }
+  .acct-box { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 28px 0 40px; }
+  @media (max-width: 600px) { .acct-box { grid-template-columns: 1fr; } }
   .acct { background: white; border-radius: 14px; padding: 22px; box-shadow: 0 2px 12px var(--shadow); }
-  .acct.pro { border-top: 3px solid var(--accent); }
   .acct.free { border-top: 3px solid var(--green); }
-  .acct-title { font-weight: 700; font-size: 1rem; margin-bottom: 6px; }
-  .acct-sub { font-size: 0.85rem; color: var(--mid); line-height: 1.5; }
-  .acct-badge { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
+  .acct.pro { border-top: 3px solid var(--accent); }
+  .acct-badge { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-bottom: 8px; }
   .free .acct-badge { background: #e6f7e6; color: var(--green); }
   .pro .acct-badge { background: #fff4e0; color: #c47a00; }
-
-  .steps-wrap { margin-top: 40px; }
-  .step { display: flex; gap: 20px; margin-bottom: 40px; }
-  .step-num { width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: white; font-size: 1.2rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
-  .step-body h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
-  .step-body p { font-size: 0.93rem; color: var(--mid); line-height: 1.6; margin-bottom: 8px; }
-  .step-body a { color: var(--accent); font-weight: 600; text-underline-offset: 3px; }
-  .step-body a:hover { color: #c47a00; }
-  .step-img { background: #f0f4f8; border-radius: 12px; padding: 14px 18px; font-size: 0.85rem; color: var(--mid); border-left: 3px solid var(--accent); margin-top: 8px; line-height: 1.55; }
-  .step-img strong { color: var(--dark); display: block; margin-bottom: 4px; }
-  .step-tag { display: inline-block; background: #fff4e0; color: #c47a00; border: 1px solid #f5a623; border-radius: 6px; padding: 2px 10px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; }
-  .first-msg { background: white; border-radius: 12px; padding: 16px 20px; border-left: 4px solid var(--accent); font-size: 0.92rem; color: var(--mid); font-style: italic; margin-top: 10px; box-shadow: 0 2px 8px var(--shadow); }
-
-  /* DOCS */
+  .acct-title { font-weight: 700; font-size: 1rem; margin-bottom: 6px; }
+  .acct-sub { font-size: 0.85rem; color: var(--mid); line-height: 1.55; }
+  .step { display: flex; gap: 20px; margin-bottom: 44px; }
+  .snum { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: white; font-size: 1.1rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 3px; }
+  .snum.done { background: var(--green); font-size: 1.3rem; }
+  .sbody h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+  .sbody p { font-size: 0.93rem; color: var(--mid); line-height: 1.65; margin-bottom: 8px; }
+  .sbody a { color: var(--accent); font-weight: 600; text-underline-offset: 3px; }
+  .sbody a:hover { color: #c47a00; }
+  .tip { background: white; border-radius: 10px; padding: 14px 18px; font-size: 0.87rem; color: var(--mid); border-left: 3px solid var(--accent); margin-top: 10px; line-height: 1.6; }
+  .tip strong { color: var(--dark); display: block; margin-bottom: 3px; }
+  .tip.green { border-left-color: var(--green); }
+  .filelist { background: white; border-radius: 10px; padding: 16px 20px; margin-top: 10px; font-size: 0.87rem; color: var(--mid); line-height: 2; }
+  .filelist code { background: #f0f4f8; padding: 1px 6px; border-radius: 4px; font-size: 0.83rem; color: var(--dark); }
+  .first-msg { background: white; border-radius: 12px; padding: 16px 20px; border-left: 4px solid var(--accent); font-size: 0.93rem; color: var(--mid); font-style: italic; margin-top: 10px; box-shadow: 0 2px 8px var(--shadow); }
   #docs { background: white; }
-  .doc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; margin-top: 36px; }
+  .doc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(148px, 1fr)); gap: 14px; margin-top: 36px; }
   .doc-chip { background: #f5f7fa; border-radius: 12px; padding: 16px 12px; text-align: center; font-size: 0.85rem; font-weight: 600; color: var(--mid); transition: background 0.2s, color 0.2s, transform 0.2s; }
   .doc-chip:hover { background: var(--accent); color: white; transform: scale(1.03); }
   .doc-icon { font-size: 1.4rem; margin-bottom: 6px; }
-
-  /* WELLBEING */
   #wellbeing { background: var(--sky); }
   .wb-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 18px; margin-top: 36px; }
   .wb-card { background: white; border-radius: 16px; padding: 22px 18px; text-align: center; border: 1px solid #e4eee4; transition: transform 0.25s; }
@@ -110,8 +97,6 @@
   .wb-card p { font-size: 0.8rem; color: var(--mid); line-height: 1.5; }
   .hb { animation: hb 2s ease infinite; }
   @keyframes hb { 0%,100%{transform:scale(1)} 14%{transform:scale(1.12)} 28%{transform:scale(1)} 42%{transform:scale(1.08)} 56%{transform:scale(1)} }
-
-  /* DOWNLOAD */
   #download { background: linear-gradient(135deg, #1a2332 0%, #2d4060 100%); }
   #download .label { color: var(--accent); }
   #download h2 { color: white; }
@@ -128,19 +113,16 @@
   .dl-btn:hover { transform: scale(1.04); }
   .gh-link { display: block; margin-top: 14px; color: rgba(255,255,255,0.4); font-size: 0.8rem; text-decoration: none; }
   .gh-link:hover { color: rgba(255,255,255,0.7); }
-
-  /* FOOTER */
   footer { background: #1a2332; color: rgba(255,255,255,0.5); text-align: center; padding: 28px 24px; font-size: 0.85rem; }
   footer strong { color: white; }
   footer a { color: var(--accent); text-decoration: none; }
-
   @media (max-width: 600px) {
     .nav-links { display: none; }
     .branch-row { flex-direction: column !important; transform: translateY(24px) !important; }
     .connector { width: 10px; height: 36px; margin: 0 auto; }
     .bbird { margin: 0 auto; }
     .step { flex-direction: column; gap: 12px; }
-    .step-num { margin-top: 0; }
+    .snum { margin-top: 0; }
   }
 </style>
 </head>
@@ -192,8 +174,8 @@
       <text x="200" y="74" font-size="16" fill="#ff6b9d" opacity="0.8">&#10084;</text>
     </svg>
   </div>
-  <h1>It's Time to Leave<br><span>the Nest.</span></h1>
-  <p>Real World Ready Coach is a personal AI coach for young adults ages 17&ndash;24. It coaches you through budgeting, renting, car buying, job interviews, and more &mdash; one step at a time.</p>
+  <h1>It&rsquo;s Time to Leave<br><span>the Nest.</span></h1>
+  <p>Real World Ready Coach is a personal AI coach for young adults ages 17&ndash;24. It walks you through budgeting, renting, car buying, job interviews, and more &mdash; one step at a time.</p>
   <div class="hero-btns">
     <a href="#setup" class="btn-main">&#128197; Set It Up Free</a>
     <a href="#journey" class="btn-outline">See the Journey &#8595;</a>
@@ -205,51 +187,15 @@
   <div class="inner">
     <div class="label">The Path</div>
     <h2>From the Nest to Soaring</h2>
-    <p class="sub">Seven branches. Each one builds on the last. You start wherever you are.</p>
+    <p class="sub">Seven branches. Each one builds on the last. You start wherever you are &mdash; the coach figures out where that is.</p>
     <div class="tree">
-
-      <div class="branch-row">
-        <div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="42" rx="18" ry="15" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="45,25 52,27 45,29" fill="#e07b00"/><circle cx="40" cy="24" r="3" fill="#1a1a1a"/><circle cx="41" cy="23" r="1" fill="white"/><ellipse cx="18" cy="42" rx="12" ry="8" fill="#e8931a" transform="rotate(-10 18 42)"/><rect x="24" y="44" width="16" height="12" rx="4" fill="#a0c8ff"/></svg><div class="cbadge">&#128564; Pajamas</div></div>
-        <div class="connector"></div>
-        <div class="bcard"><div class="bnum">Branch 1</div><div class="btitle">Still in the Nest</div><div class="bdesc">Overwhelmed. No plan. Not sure where adult life starts. This is where everyone begins. The coach does not judge. It just starts.</div><div class="btags"><span class="tag">No budget yet</span><span class="tag">No bank account yet</span><span class="tag">That's okay</span></div></div>
-      </div>
-
-      <div class="branch-row right">
-        <div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="42" rx="18" ry="15" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="19,25 12,27 19,29" fill="#e07b00"/><circle cx="24" cy="24" r="3" fill="#1a1a1a"/><circle cx="25" cy="23" r="1" fill="white"/><ellipse cx="46" cy="42" rx="12" ry="8" fill="#e8931a" transform="rotate(10 46 42)"/><rect x="24" y="43" width="16" height="13" rx="4" fill="#cc3300"/><rect x="27" y="46" width="8" height="5" rx="1" fill="white"/></svg><div class="cbadge">&#127839; First Job</div></div>
-        <div class="connector"></div>
-        <div class="bcard"><div class="bnum">Branch 2</div><div class="btitle">Money In</div><div class="bdesc">Where does the money come from? Parents, a job, or both? The coach confirms your real take-home pay before building anything else.</div><div class="btags"><span class="tag">Income source</span><span class="tag">First paycheck</span><span class="tag">Gross vs. take-home</span><span class="tag">Pay stub</span></div></div>
-      </div>
-
-      <div class="branch-row">
-        <div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="42" rx="18" ry="15" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="45,25 52,27 45,29" fill="#e07b00"/><circle cx="40" cy="24" r="3" fill="#1a1a1a"/><circle cx="41" cy="23" r="1" fill="white"/><ellipse cx="18" cy="42" rx="12" ry="8" fill="#e8931a" transform="rotate(-10 18 42)"/><rect x="24" y="43" width="16" height="13" rx="4" fill="#5577cc"/><rect x="14" y="36" width="10" height="14" rx="4" fill="#cc7722"/></svg><div class="cbadge">&#127381; Casual</div></div>
-        <div class="connector"></div>
-        <div class="bcard"><div class="bnum">Branch 3</div><div class="btitle">Money Managed</div><div class="bdesc">First bank account. First real budget. Direct deposit set up. The coach walks through what to open, where to open it, and how to avoid fees.</div><div class="btags"><span class="tag">Checking account</span><span class="tag">Savings account</span><span class="tag">Budget</span><span class="tag">Emergency fund</span></div></div>
-      </div>
-
-      <div class="branch-row right">
-        <div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="42" rx="18" ry="15" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="19,25 12,27 19,29" fill="#e07b00"/><circle cx="24" cy="24" r="3" fill="#1a1a1a"/><circle cx="25" cy="23" r="1" fill="white"/><ellipse cx="46" cy="42" rx="12" ry="8" fill="#e8931a" transform="rotate(10 46 42)"/><rect x="24" y="43" width="16" height="13" rx="4" fill="#338855"/></svg><div class="cbadge">&#128722; Independent</div></div>
-        <div class="connector"></div>
-        <div class="bcard"><div class="bnum">Branch 4</div><div class="btitle">Daily Independence</div><div class="bdesc">Grocery shopping, scheduling doctor appointments, understanding a bill, applying for a first credit card. The everyday tasks nobody explains.</div><div class="btags"><span class="tag">Groceries</span><span class="tag">Appointments</span><span class="tag">First credit card</span><span class="tag">Reading bills</span></div></div>
-      </div>
-
-      <div class="branch-row">
-        <div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="42" rx="18" ry="15" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="45,25 52,27 45,29" fill="#e07b00"/><circle cx="40" cy="24" r="3" fill="#1a1a1a"/><circle cx="41" cy="23" r="1" fill="white"/><ellipse cx="18" cy="42" rx="12" ry="8" fill="#e8931a" transform="rotate(-10 18 42)"/><rect x="24" y="43" width="16" height="13" rx="4" fill="#334466"/><polygon points="30,40 34,40 33,46 31,46" fill="#cc2222"/></svg><div class="cbadge">&#127968; Big Decisions</div></div>
-        <div class="connector"></div>
-        <div class="bcard"><div class="bnum">Branch 5</div><div class="btitle">Bigger Decisions</div><div class="bdesc">Renting an apartment, buying a car, understanding your credit score. The coach goes deep on leases and loans before you sign anything.</div><div class="btags"><span class="tag">Apartment lease</span><span class="tag">Cosigners</span><span class="tag">Car buying</span><span class="tag">Credit score</span><span class="tag">Loan review</span></div></div>
-      </div>
-
-      <div class="branch-row right">
-        <div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="42" rx="18" ry="15" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="19,25 12,27 19,29" fill="#e07b00"/><circle cx="24" cy="24" r="3" fill="#1a1a1a"/><circle cx="25" cy="23" r="1" fill="white"/><ellipse cx="46" cy="42" rx="12" ry="8" fill="#e8931a" transform="rotate(10 46 42)"/><rect x="24" y="43" width="16" height="13" rx="4" fill="#1a2332"/><rect x="44" y="44" width="12" height="9" rx="3" fill="#8B6914"/></svg><div class="cbadge">&#128188; Professional</div></div>
-        <div class="connector"></div>
-        <div class="bcard"><div class="bnum">Branch 6</div><div class="btitle">Career Ready</div><div class="bdesc">Job interviews, reviewing a job offer, understanding what you are signing before you start. The coach helps you prepare and push back when needed.</div><div class="btags"><span class="tag">Interview prep</span><span class="tag">Job offer review</span><span class="tag">Noncompete clauses</span></div></div>
-      </div>
-
-      <div class="branch-row">
-        <div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="8" cy="38" rx="14" ry="8" fill="#e8931a" transform="rotate(-20 8 38)"/><ellipse cx="56" cy="38" rx="14" ry="8" fill="#e8931a" transform="rotate(20 56 38)"/><ellipse cx="32" cy="40" rx="18" ry="14" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="45,25 53,27 45,29" fill="#e07b00"/><circle cx="40" cy="24" r="3" fill="#1a1a1a"/><circle cx="41" cy="23" r="1" fill="white"/><rect x="25" y="42" width="14" height="10" rx="3" fill="#2244aa"/></svg><div class="cbadge">&#127881; Soaring</div></div>
-        <div class="connector"></div>
-        <div class="bcard" style="border-left-color:var(--green);"><div class="bnum" style="color:var(--green);">Branch 7</div><div class="btitle">Soaring &#127881;</div><div class="bdesc">Emergency savings in place. Budget working. Credit building. Decisions made from facts, not panic. This is the goal.</div><div class="btags"><span class="tag">3-month emergency fund</span><span class="tag">Stable budget</span><span class="tag">Credit on track</span></div></div>
-      </div>
-
+      <div class="branch-row"><div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="42" rx="18" ry="15" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="45,25 52,27 45,29" fill="#e07b00"/><circle cx="40" cy="24" r="3" fill="#1a1a1a"/><circle cx="41" cy="23" r="1" fill="white"/><ellipse cx="18" cy="42" rx="12" ry="8" fill="#e8931a" transform="rotate(-10 18 42)"/><rect x="24" y="44" width="16" height="12" rx="4" fill="#a0c8ff"/></svg><div class="cbadge">&#128564; Pajamas</div></div><div class="connector"></div><div class="bcard"><div class="bnum">Branch 1</div><div class="btitle">Still in the Nest</div><div class="bdesc">Overwhelmed. No plan. Not sure where adult life starts. Everyone begins here. The coach does not judge &mdash; it just starts.</div><div class="btags"><span class="tag">No budget yet</span><span class="tag">No bank account yet</span><span class="tag">That&rsquo;s okay</span></div></div></div>
+      <div class="branch-row right"><div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="42" rx="18" ry="15" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="19,25 12,27 19,29" fill="#e07b00"/><circle cx="24" cy="24" r="3" fill="#1a1a1a"/><circle cx="25" cy="23" r="1" fill="white"/><ellipse cx="46" cy="42" rx="12" ry="8" fill="#e8931a" transform="rotate(10 46 42)"/><rect x="24" y="43" width="16" height="13" rx="4" fill="#cc3300"/><rect x="27" y="46" width="8" height="5" rx="1" fill="white"/></svg><div class="cbadge">&#127839; First Job</div></div><div class="connector"></div><div class="bcard"><div class="bnum">Branch 2</div><div class="btitle">Money In</div><div class="bdesc">Where does the money come from? Parents, a job, or both? The coach confirms your real take-home before building anything else.</div><div class="btags"><span class="tag">Income source</span><span class="tag">First paycheck</span><span class="tag">Gross vs. take-home</span></div></div></div>
+      <div class="branch-row"><div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="42" rx="18" ry="15" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="45,25 52,27 45,29" fill="#e07b00"/><circle cx="40" cy="24" r="3" fill="#1a1a1a"/><circle cx="41" cy="23" r="1" fill="white"/><ellipse cx="18" cy="42" rx="12" ry="8" fill="#e8931a" transform="rotate(-10 18 42)"/><rect x="24" y="43" width="16" height="13" rx="4" fill="#5577cc"/><rect x="14" y="36" width="10" height="14" rx="4" fill="#cc7722"/></svg><div class="cbadge">&#127381; Casual</div></div><div class="connector"></div><div class="bcard"><div class="bnum">Branch 3</div><div class="btitle">Money Managed</div><div class="bdesc">First bank account. First real budget built on real numbers. Direct deposit set up. No more guessing where money goes.</div><div class="btags"><span class="tag">Checking account</span><span class="tag">Savings account</span><span class="tag">Budget</span><span class="tag">Emergency fund</span></div></div></div>
+      <div class="branch-row right"><div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="42" rx="18" ry="15" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="19,25 12,27 19,29" fill="#e07b00"/><circle cx="24" cy="24" r="3" fill="#1a1a1a"/><circle cx="25" cy="23" r="1" fill="white"/><ellipse cx="46" cy="42" rx="12" ry="8" fill="#e8931a" transform="rotate(10 46 42)"/><rect x="24" y="43" width="16" height="13" rx="4" fill="#338855"/></svg><div class="cbadge">&#128722; Independent</div></div><div class="connector"></div><div class="bcard"><div class="bnum">Branch 4</div><div class="btitle">Daily Independence</div><div class="bdesc">Grocery shopping, scheduling doctor appointments, reading a bill, applying for a first credit card. The everyday tasks nobody explains.</div><div class="btags"><span class="tag">Groceries</span><span class="tag">Appointments</span><span class="tag">First credit card</span><span class="tag">Bills</span></div></div></div>
+      <div class="branch-row"><div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="42" rx="18" ry="15" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="45,25 52,27 45,29" fill="#e07b00"/><circle cx="40" cy="24" r="3" fill="#1a1a1a"/><circle cx="41" cy="23" r="1" fill="white"/><ellipse cx="18" cy="42" rx="12" ry="8" fill="#e8931a" transform="rotate(-10 18 42)"/><rect x="24" y="43" width="16" height="13" rx="4" fill="#334466"/><polygon points="30,40 34,40 33,46 31,46" fill="#cc2222"/></svg><div class="cbadge">&#127968; Big Decisions</div></div><div class="connector"></div><div class="bcard"><div class="bnum">Branch 5</div><div class="btitle">Bigger Decisions</div><div class="bdesc">Renting an apartment, buying a car, understanding credit. The coach goes deep on leases and loans before you sign anything.</div><div class="btags"><span class="tag">Apartment lease</span><span class="tag">Cosigners</span><span class="tag">Car buying</span><span class="tag">Credit score</span></div></div></div>
+      <div class="branch-row right"><div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="42" rx="18" ry="15" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="19,25 12,27 19,29" fill="#e07b00"/><circle cx="24" cy="24" r="3" fill="#1a1a1a"/><circle cx="25" cy="23" r="1" fill="white"/><ellipse cx="46" cy="42" rx="12" ry="8" fill="#e8931a" transform="rotate(10 46 42)"/><rect x="24" y="43" width="16" height="13" rx="4" fill="#1a2332"/><rect x="44" y="44" width="12" height="9" rx="3" fill="#8B6914"/></svg><div class="cbadge">&#128188; Professional</div></div><div class="connector"></div><div class="bcard"><div class="bnum">Branch 6</div><div class="btitle">Career Ready</div><div class="bdesc">Job interviews, reviewing a job offer, understanding what you are signing before you start. Prepare and push back when needed.</div><div class="btags"><span class="tag">Interview prep</span><span class="tag">Job offer review</span><span class="tag">Noncompete clauses</span></div></div></div>
+      <div class="branch-row"><div class="bbird"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="8" cy="38" rx="14" ry="8" fill="#e8931a" transform="rotate(-20 8 38)"/><ellipse cx="56" cy="38" rx="14" ry="8" fill="#e8931a" transform="rotate(20 56 38)"/><ellipse cx="32" cy="40" rx="18" ry="14" fill="#f5a623"/><circle cx="32" cy="26" r="13" fill="#f5a623"/><polygon points="45,25 53,27 45,29" fill="#e07b00"/><circle cx="40" cy="24" r="3" fill="#1a1a1a"/><circle cx="41" cy="23" r="1" fill="white"/><rect x="25" y="42" width="14" height="10" rx="3" fill="#2244aa"/></svg><div class="cbadge">&#127881; Soaring</div></div><div class="connector"></div><div class="bcard" style="border-left-color:var(--green);"><div class="bnum" style="color:var(--green);">Branch 7</div><div class="btitle">Soaring &#127881;</div><div class="bdesc">Emergency savings in place. Budget working. Credit building. Decisions made from facts, not panic. This is the goal.</div><div class="btags"><span class="tag">3-month emergency fund</span><span class="tag">Stable budget</span><span class="tag">Credit on track</span></div></div></div>
     </div>
   </div>
 </section>
@@ -259,104 +205,135 @@
   <div class="inner">
     <div class="label">Setup Guide</div>
     <h2>How to Set It Up</h2>
-    <p class="sub">This coach runs inside Claude Projects. Here is exactly how to set it up, step by step.</p>
+    <p class="sub">Follow these steps exactly. This guide is written for someone who has never used Claude before.</p>
 
     <div style="margin-top:32px;">
-      <p style="font-size:0.95rem;color:var(--mid);margin-bottom:8px;"><strong style="color:var(--dark);">First: which account do you have?</strong></p>
-      <div class="account-box">
+      <p style="font-weight:700;font-size:0.95rem;margin-bottom:14px;">First &mdash; do you need a free or paid account?</p>
+      <div class="acct-box">
         <div class="acct free">
-          <div class="acct-badge">Free Account</div>
-          <div class="acct-title">Claude.ai Free</div>
-          <div class="acct-sub">Free accounts can use Claude but may not have access to Projects depending on your region. If you do not see &ldquo;Projects&rdquo; in the sidebar after signing in, you will need to upgrade to Pro.</div>
+          <div class="acct-badge">Free</div>
+          <div class="acct-title">Claude Free Account</div>
+          <div class="acct-sub">Free accounts let you chat with Claude. However, the <strong>Projects</strong> feature &mdash; which is what the coach requires &mdash; may not be available on a free account in your region. If you sign up free and do not see &ldquo;Projects&rdquo; in the menu, you will need to upgrade.</div>
         </div>
         <div class="acct pro">
-          <div class="acct-badge">Recommended</div>
-          <div class="acct-title">Claude.ai Pro &mdash; $20/month</div>
-          <div class="acct-sub">Pro accounts have full access to Projects. This is what the coach is built for. Projects let the coach remember all the files and stay in character across every conversation.</div>
+          <div class="acct-badge">Recommended &mdash; $20/month</div>
+          <div class="acct-title">Claude Pro Account</div>
+          <div class="acct-sub">Pro accounts include full access to Projects. This is what the coach is built for. Projects let Claude read your uploaded files and stay in character as your coach across every conversation. You can cancel Pro at any time.</div>
         </div>
       </div>
     </div>
 
-    <div class="steps-wrap">
-
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Download the coach folder</h3>
-          <p>Click the button below to download the coach as a ZIP file. It contains all the files the coach needs. You will upload them in Step 4.</p>
-          <a href="https://github.com/DocEmmettBrownPhd/real-world-ready-coach/archive/refs/heads/main.zip" class="dl-btn" style="display:inline-flex;margin-top:4px;">&#8659; Download Coach Folder</a>
-          <div class="step-img" style="margin-top:14px;"><strong>After downloading:</strong> Find the ZIP file in your Downloads folder. Unzip it (double-click on Mac, right-click &rarr; Extract All on Windows). You will see a folder called <em>real-world-ready-coach-main</em>. Keep that folder open &mdash; you will need it in Step 4.</div>
-        </div>
+    <!-- STEP 1 -->
+    <div class="step">
+      <div class="snum">1</div>
+      <div class="sbody">
+        <h3>Download the coach folder to your device</h3>
+        <p>Click the button below. It will download a ZIP file to your device &mdash; this is the coach folder.</p>
+        <a href="https://github.com/DocEmmettBrownPhd/real-world-ready-coach/archive/refs/heads/main.zip" class="dl-btn" style="display:inline-flex;margin:8px 0 12px;">&#8659; Download Coach Folder</a>
+        <div class="tip"><strong>After it downloads:</strong> Open your Downloads folder. You will see a file called <code>real-world-ready-coach-main.zip</code>. Double-click it to unzip (on Mac it opens automatically &mdash; on Windows, right-click it and choose &ldquo;Extract All&rdquo;). You will now have a folder called <code>real-world-ready-coach-main</code>. Leave it open. You will need it later.</div>
       </div>
-
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Create a Claude account</h3>
-          <p>Go to <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a> and create an account. It takes about two minutes. Use your email address.</p>
-          <div class="step-img"><strong>Already have an account?</strong> Skip to Step 3.</div>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Make sure you have access to Projects</h3>
-          <p>After signing in, look at the left sidebar. You should see a section called <strong>Projects</strong>. If you do not see it, you will need a Pro account.</p>
-          <p>To upgrade: go to <a href="https://claude.ai/settings/billing" target="_blank" rel="noopener">claude.ai/settings/billing</a> and choose the Pro plan ($20/month). You can cancel anytime.</p>
-          <div class="step-img"><strong>What you are looking for:</strong> In the left sidebar after signing in, there should be a &ldquo;Projects&rdquo; section with a &ldquo;+ New project&rdquo; button. If you see it, you are ready for Step 4.</div>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">4</div>
-        <div class="step-body">
-          <h3>Create a new Project</h3>
-          <p>In the left sidebar, click <strong>Projects</strong> then click <strong>+ New project</strong>. Name it anything you want &mdash; something like <em>My Coach</em> or <em>Real World Ready</em> works fine.</p>
-          <div class="step-img"><strong>What this does:</strong> A Project is a special space in Claude where you can upload files that Claude reads before every conversation. This is how the coach knows who it is and how to talk to you.</div>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">5</div>
-        <div class="step-body">
-          <h3>Upload the coach files</h3>
-          <p>Inside your new Project, you will see a section called <strong>Project knowledge</strong> or <strong>Add content</strong>. Click it to upload files.</p>
-          <p>Upload these files from the folder you downloaded in Step 1:</p>
-          <div class="step-img">
-            <strong>Upload all of these files:</strong><br>
-            &bull; identity.md<br>
-            &bull; rules.md<br>
-            &bull; examples.md<br>
-            &bull; onboarding.md<br>
-            &bull; source.md<br>
-            &bull; All 10 files inside the <em>reference</em> folder
-          </div>
-          <p style="margin-top:12px;">You do not need to upload README.md or submission.md &mdash; those are for reference only.</p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">6</div>
-        <div class="step-body">
-          <h3>Start your first conversation</h3>
-          <p>Click <strong>Start chat</strong> inside the Project. The coach will introduce itself, explain what it does, and ask you a few questions to find out where you are starting from.</p>
-          <p>You do not need to say anything special. Just type something like:</p>
-          <div class="first-msg">&ldquo;I just graduated. I don&rsquo;t really know where to start with money or any of this stuff.&rdquo;</div>
-          <p style="margin-top:12px;">The coach takes it from there. It will ask you questions before it gives you any advice.</p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num" style="background:var(--green);">&#10003;</div>
-        <div class="step-body">
-          <h3>You are set up</h3>
-          <p>Every conversation you start inside this Project will have the full coach loaded. The coach will ask questions, listen, and give you one clear next step at a time. It will remember what you tell it within each conversation.</p>
-          <div class="step-img"><strong>Sharing with someone else:</strong> Send them the download link or email them the files. Then send them this page. They follow the same six steps above.</div>
-        </div>
-      </div>
-
     </div>
+
+    <!-- STEP 2 -->
+    <div class="step">
+      <div class="snum">2</div>
+      <div class="sbody">
+        <h3>Create a Claude account</h3>
+        <p>Go to <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a> or <a href="https://claude.com" target="_blank" rel="noopener">claude.com</a> &mdash; both go to the same place. Click <strong>Sign up</strong>.</p>
+        <p>Enter your email address and create a password. Claude will send you a verification email &mdash; open it and click the link to confirm your account.</p>
+        <div class="tip"><strong>Already have an account?</strong> Just sign in and skip to Step 3.</div>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="step">
+      <div class="snum">3</div>
+      <div class="sbody">
+        <h3>Check whether you have access to Projects</h3>
+        <p>After signing in, look at the left side of the screen. You will see a sidebar menu. Look for a section called <strong>Projects</strong>.</p>
+        <div class="tip"><strong>If you see &ldquo;Projects&rdquo; in the menu:</strong> You are ready. Skip to Step 4.<br><br><strong>If you do not see &ldquo;Projects&rdquo;:</strong> You need to upgrade to Pro. Click your name or account icon (bottom left), choose <strong>Upgrade to Pro</strong>, and follow the steps. Cost is $20/month and you can cancel anytime. Once upgraded, come back here and continue with Step 4.</div>
+      </div>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="step">
+      <div class="snum">4</div>
+      <div class="sbody">
+        <h3>Create a new Project</h3>
+        <p>In the left sidebar, click <strong>Projects</strong>. Then click the button that says <strong>+ New project</strong> or <strong>Create project</strong>.</p>
+        <p>A box will appear asking you to name your project. Type anything you want &mdash; for example:</p>
+        <div class="first-msg" style="font-style:normal;">My Coach &nbsp;&nbsp;or&nbsp;&nbsp; Real World Ready &nbsp;&nbsp;or&nbsp;&nbsp; Adulting Help</div>
+        <p style="margin-top:12px;">Then click <strong>Create</strong> or press Enter. Your new project will open.</p>
+        <div class="tip"><strong>What is a Project?</strong> A Project is a private space inside Claude where you upload files. Claude reads those files before every conversation, so it always knows who it is and what its job is. Without the files, Claude is just a general chatbot. With them, it becomes your personal coach.</div>
+      </div>
+    </div>
+
+    <!-- STEP 5 -->
+    <div class="step">
+      <div class="snum">5</div>
+      <div class="sbody">
+        <h3>Upload the coach files to your Project</h3>
+        <p>Inside your new Project, look for a section on the right side (or top) that says <strong>Project knowledge</strong> or <strong>Add content</strong>. Click it.</p>
+        <p>A file picker will open. Navigate to the <code>real-world-ready-coach-main</code> folder you unzipped in Step 1. Upload these files:</p>
+        <div class="filelist">
+          <code>identity.md</code><br>
+          <code>rules.md</code><br>
+          <code>examples.md</code><br>
+          <code>onboarding.md</code><br>
+          <code>progress.md</code><br>
+          <code>source.md</code><br>
+          Then open the <strong>reference</strong> folder inside and upload all 10 files inside it:
+          <code>adulting-milestones.md</code> &nbsp;
+          <code>coaching-framework.md</code> &nbsp;
+          <code>budget-framework.md</code> &nbsp;
+          <code>banking-credit-framework.md</code> &nbsp;
+          <code>document-review-framework.md</code> &nbsp;
+          <code>car-buying-framework.md</code> &nbsp;
+          <code>renting-framework.md</code> &nbsp;
+          <code>job-interview-framework.md</code> &nbsp;
+          <code>grocery-framework.md</code> &nbsp;
+          <code>health-appointments-framework.md</code>
+        </div>
+        <div class="tip" style="margin-top:12px;"><strong>Do not upload</strong> <code>README.md</code> or <code>submission.md</code> &mdash; those are informational only and not part of the coach.</div>
+        <div class="tip green" style="margin-top:8px;"><strong>Total files to upload:</strong> 16 files (6 in the main folder + 10 inside the reference folder).</div>
+      </div>
+    </div>
+
+    <!-- STEP 6 -->
+    <div class="step">
+      <div class="snum">6</div>
+      <div class="sbody">
+        <h3>Start your first conversation</h3>
+        <p>Inside your Project, click the button that says <strong>Start chat</strong> or <strong>New conversation</strong>. A chat window will open.</p>
+        <p>You do not need to say anything special. Just type something natural, like:</p>
+        <div class="first-msg">&ldquo;I just graduated. I don&rsquo;t really know where to start with money or any of this adult stuff.&rdquo;</div>
+        <p style="margin-top:12px;">The coach will introduce itself, ask you a few questions to understand where you are starting from, and then begin coaching. It asks before it advises.</p>
+        <div class="tip"><strong>Important:</strong> Always start conversations from inside your Project &mdash; not from the main Claude chat screen. Starting from the main screen means Claude does not have the coach files loaded and will behave like a regular chatbot.</div>
+      </div>
+    </div>
+
+    <!-- STEP 7 -->
+    <div class="step">
+      <div class="snum">7</div>
+      <div class="sbody">
+        <h3>Check in any day to track your progress</h3>
+        <p>After your first conversation, the coach will give you an updated <code>progress.md</code> file. Replace the one in your Project with the new version. This is how the coach remembers where you are.</p>
+        <p>Any time you come back, just type:</p>
+        <div class="first-msg" style="font-style:normal;">Check in</div>
+        <p style="margin-top:12px;">The coach will read your progress file, ask what you worked on, update your tracker, and give you your next step. You can check in daily, weekly &mdash; whenever you want.</p>
+      </div>
+    </div>
+
+    <!-- DONE -->
+    <div class="step">
+      <div class="snum done">&#10003;</div>
+      <div class="sbody">
+        <h3>You are set up</h3>
+        <p>The coach is ready. Every conversation you start inside this Project will have everything loaded. It will remember your goals, your gaps, and where you left off &mdash; as long as you keep the progress file updated.</p>
+        <div class="tip green"><strong>Sharing with someone else:</strong> Send them this page. They download the folder and follow the same steps above. It is free to download and works on any phone, tablet, or computer.</div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -365,7 +342,7 @@
   <div class="inner">
     <div class="label">Document Review</div>
     <h2>Before You Sign Anything.</h2>
-    <p class="sub">Paste or upload any document. The coach reads it, explains it in plain English, spots possible red flags, and gives you questions to ask before you sign, pay, or agree.</p>
+    <p class="sub">Paste or upload any document into the chat. The coach reads it, explains it in plain English, spots possible red flags, and gives you questions to ask before you sign, pay, or agree.</p>
     <div class="doc-grid">
       <div class="doc-chip"><div class="doc-icon">&#127968;</div>Apartment Lease</div>
       <div class="doc-chip"><div class="doc-icon">&#128663;</div>Car Loan Offer</div>
@@ -378,7 +355,7 @@
       <div class="doc-chip"><div class="doc-icon">&#127979;</div>Financial Aid Letter</div>
       <div class="doc-chip"><div class="doc-icon">&#128137;</div>Insurance Document</div>
     </div>
-    <p style="margin-top:24px;font-size:0.88rem;color:var(--mid);">The coach is not a lawyer or doctor. It helps you understand, spot risks, and ask better questions &mdash; not make legal or medical decisions for you.</p>
+    <p style="margin-top:20px;font-size:0.87rem;color:var(--mid);">The coach is not a lawyer or doctor. It helps you understand, spot risks, and ask better questions &mdash; not make legal or medical decisions for you.</p>
   </div>
 </section>
 
@@ -387,13 +364,13 @@
   <div class="inner">
     <div class="label">Mental Health</div>
     <h2>The Coach Checks In on You, Not Just Your Budget</h2>
-    <p class="sub">Adult life is a lot to carry. The coach weaves mental health into every conversation &mdash; it is not a bolt-on section at the end.</p>
+    <p class="sub">Adult life is a lot to carry. The coach weaves mental health into every conversation &mdash; it is not a separate section or an afterthought.</p>
     <div class="wb-grid">
       <div class="wb-card"><div class="wb-icon hb">&#10084;</div><h4>Overwhelmed is normal</h4><p>You are not failing. You are starting. The coach knows the difference.</p></div>
-      <div class="wb-card"><div class="wb-icon">&#127939;</div><h4>Movement matters</h4><p>20 minutes of walking affects every decision you make that day. The coach will remind you.</p></div>
-      <div class="wb-card"><div class="wb-icon">&#128172;</div><h4>Therapy is a tool</h4><p>Not a last resort. The coach knows how to find low-cost options including free EAP sessions through many employers.</p></div>
-      <div class="wb-card"><div class="wb-icon">&#127774;</div><h4>Rest is not optional</h4><p>Sleep affects financial decisions, interviews, and relationships. The coach treats it like any other necessity.</p></div>
-      <div class="wb-card"><div class="wb-icon">&#127918;</div><h4>Fun is required</h4><p>Recreation is not a reward for finishing everything else. The coach helps you protect space for it.</p></div>
+      <div class="wb-card"><div class="wb-icon">&#127939;</div><h4>Movement matters</h4><p>20 minutes of walking affects every decision you make that day.</p></div>
+      <div class="wb-card"><div class="wb-icon">&#128172;</div><h4>Therapy is a tool</h4><p>Not a last resort. The coach knows how to find low-cost and free options.</p></div>
+      <div class="wb-card"><div class="wb-icon">&#127774;</div><h4>Rest is not optional</h4><p>Sleep affects financial decisions, interviews, and relationships.</p></div>
+      <div class="wb-card"><div class="wb-icon">&#127918;</div><h4>Fun is required</h4><p>Recreation is not a reward for finishing everything else.</p></div>
     </div>
   </div>
 </section>
@@ -403,23 +380,19 @@
   <div class="inner">
     <div class="label">Get It Free</div>
     <h2>Download the Coach</h2>
-    <p class="sub">No account needed to download. Works on any device with a browser. Free forever.</p>
+    <p class="sub">No account needed to download. Works on any device. Free forever.</p>
     <div class="dl-grid">
       <div class="dl-card">
         <h3>&#128241; Scan to Download</h3>
         <p>Point your phone camera at this code. It goes straight to the download.</p>
         <div class="qr-box">
-          <img
-            src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=1a2332&bgcolor=ffffff&data=https%3A%2F%2Fgithub.com%2FDocEmmettBrownPhd%2Freal-world-ready-coach%2Farchive%2Frefs%2Fheads%2Fmain.zip"
-            alt="QR code to download Real World Ready Coach"
-            width="150" height="150"
-          />
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=1a2332&bgcolor=ffffff&data=https%3A%2F%2Fgithub.com%2FDocEmmettBrownPhd%2Freal-world-ready-coach%2Farchive%2Frefs%2Fheads%2Fmain.zip" alt="QR code to download Real World Ready Coach" width="150" height="150" />
         </div>
         <div class="qr-note">Scan with your phone camera</div>
       </div>
       <div class="dl-card">
         <h3>&#128187; Download from GitHub</h3>
-        <p>Click the button. No GitHub account needed. Downloads as a ZIP file. Unzip it and follow the setup guide above.</p>
+        <p>Click the button. No GitHub account needed. Downloads as a ZIP. Unzip it and follow the setup guide above.</p>
         <a href="https://github.com/DocEmmettBrownPhd/real-world-ready-coach/archive/refs/heads/main.zip" class="dl-btn">&#8659; Download Coach Folder</a>
         <a href="https://github.com/DocEmmettBrownPhd/real-world-ready-coach" class="gh-link">View on GitHub &rarr;</a>
       </div>
