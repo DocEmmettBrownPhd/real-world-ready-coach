@@ -110,16 +110,22 @@
   #download .label { color: var(--accent); }
   #download h2 { color: white; }
   #download .sub { color: rgba(255,255,255,0.68); }
-  .dl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 44px; }
+  .desktop-notice { background: rgba(245,166,35,0.15); border: 1px solid rgba(245,166,35,0.4); border-radius: 12px; padding: 16px 22px; margin: 28px 0 36px; display: flex; align-items: flex-start; gap: 14px; }
+  .desktop-notice .dn-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+  .desktop-notice p { color: rgba(255,255,255,0.85); font-size: 0.92rem; line-height: 1.6; margin: 0; }
+  .desktop-notice strong { color: white; }
+  .dl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
   @media (max-width: 600px) { .dl-grid { grid-template-columns: 1fr; } }
   .dl-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: 18px; padding: 28px; text-align: center; }
   .dl-card h3 { color: white; font-size: 1.05rem; margin-bottom: 8px; }
   .dl-card p { color: rgba(255,255,255,0.62); font-size: 0.88rem; line-height: 1.6; margin-bottom: 18px; }
-  .qr-box { width: 170px; height: 170px; background: white; border-radius: 14px; margin: 0 auto 14px; display: flex; align-items: center; justify-content: center; padding: 10px; }
+  .qr-box { width: 170px; height: 170px; background: white; border-radius: 14px; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; padding: 10px; }
   .qr-box img { width: 150px; height: 150px; display: block; }
-  .qr-note { color: rgba(255,255,255,0.45); font-size: 0.73rem; }
+  .qr-note { color: rgba(255,255,255,0.5); font-size: 0.75rem; line-height: 1.5; margin-bottom: 18px; }
   .dl-btn { display: inline-flex; align-items: center; gap: 9px; background: var(--accent); color: white; padding: 13px 26px; border-radius: 50px; font-weight: 700; font-size: 0.93rem; text-decoration: none; transition: transform 0.2s; }
   .dl-btn:hover { transform: scale(1.04); }
+  .email-btn { display: inline-flex; align-items: center; gap: 9px; background: rgba(255,255,255,0.12); color: white; border: 1px solid rgba(255,255,255,0.3); padding: 13px 26px; border-radius: 50px; font-weight: 600; font-size: 0.93rem; text-decoration: none; transition: background 0.2s; margin-top: 12px; }
+  .email-btn:hover { background: rgba(255,255,255,0.2); }
   .gh-link { display: block; margin-top: 14px; color: rgba(255,255,255,0.4); font-size: 0.8rem; text-decoration: none; }
   .gh-link:hover { color: rgba(255,255,255,0.7); }
 
@@ -328,17 +334,29 @@
   <div class="inner">
     <div class="label">Get It Free</div>
     <h2>Download the Coach</h2>
-    <p class="sub">No account needed to download. Works on any device. Free forever.</p>
+    <p class="sub">Free to download. No account needed to get the files.</p>
+
+    <div class="desktop-notice">
+      <div class="dn-icon">&#128187;</div>
+      <p><strong>Setup requires a laptop or desktop computer.</strong> The Claude Projects feature &mdash; where you upload the coach files &mdash; is only available in a desktop browser. You can scan the QR code or email yourself the link to come back to this page later, but the actual setup needs to happen on a computer. It takes about 10 minutes.</p>
+    </div>
+
     <div class="dl-grid">
       <div class="dl-card">
-        <h3>&#128241; Scan to Download</h3>
-        <p>Point your phone camera at this code. Goes straight to the download.</p>
-        <div class="qr-box"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=1a2332&bgcolor=ffffff&data=https%3A%2F%2Fgithub.com%2FDocEmmettBrownPhd%2Freal-world-ready-coach%2Farchive%2Frefs%2Fheads%2Fmain.zip" alt="QR code" width="150" height="150" /></div>
-        <div class="qr-note">Scan with your phone camera</div>
+        <h3>&#128241; View This Page on Your Phone</h3>
+        <p>Scan this code with your phone camera. It opens this page so you can read the setup guide and share it. When you are ready, come back on a computer to set it up.</p>
+        <div class="qr-box">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=1a2332&bgcolor=ffffff&data=https%3A%2F%2Fdocemmettbrownphd.github.io%2Freal-world-ready-coach%2F"
+            alt="QR code to this page"
+            width="150" height="150" />
+        </div>
+        <div class="qr-note">Opens this page &mdash; not the download.<br>Setup still requires a computer.</div>
+        <a href="mailto:?subject=Real%20World%20Ready%20Coach%20%E2%80%94%20Set%20This%20Up&body=Here%27s%20the%20link%20to%20set%20up%20the%20Real%20World%20Ready%20Coach%3A%0A%0Ahttps%3A%2F%2Fdocemmettbrownphd.github.io%2Freal-world-ready-coach%2F%0A%0AFollow%20the%20setup%20guide%20on%20a%20laptop%20or%20desktop.%20Takes%20about%2010%20minutes." class="email-btn">&#9993; Email This to Yourself</a>
       </div>
       <div class="dl-card">
-        <h3>&#128187; Download from GitHub</h3>
-        <p>Click the button. No GitHub account needed. Downloads as a ZIP file. Unzip it and follow the setup guide above.</p>
+        <h3>&#128187; Download from a Computer</h3>
+        <p>Click the button on your laptop or desktop. Downloads as a ZIP file. Unzip it and follow the setup guide above. No GitHub account needed.</p>
         <a href="https://github.com/DocEmmettBrownPhd/real-world-ready-coach/archive/refs/heads/main.zip" class="dl-btn">&#8659; Download Coach Folder</a>
         <a href="https://github.com/DocEmmettBrownPhd/real-world-ready-coach" class="gh-link">View on GitHub &rarr;</a>
       </div>
