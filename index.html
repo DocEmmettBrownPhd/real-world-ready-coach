@@ -102,7 +102,7 @@
   .download-card h3 { color: white; font-size: 1.15rem; margin-bottom: 8px; }
   .download-card p { color: rgba(255,255,255,0.65); font-size: 0.9rem; margin-bottom: 20px; line-height: 1.6; }
   .qr-box { width: 180px; height: 180px; background: white; border-radius: 16px; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; padding: 12px; }
-  #qrcode canvas { display: block; }
+  .qr-box img { width: 156px; height: 156px; display: block; }
   .qr-label { color: rgba(255,255,255,0.5); font-size: 0.75rem; margin-top: 8px; }
   .download-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: white; padding: 14px 28px; border-radius: 50px; font-weight: 700; font-size: 0.95rem; text-decoration: none; transition: transform 0.2s; }
   .download-btn:hover { transform: scale(1.04); }
@@ -278,7 +278,14 @@
       <div class="download-card">
         <h3>&#128241; Scan to Download</h3>
         <p>Point your phone camera at this code to go straight to the download.</p>
-        <div class="qr-box"><canvas id="qrcanvas"></canvas></div>
+        <div class="qr-box">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=156x156&color=1a2332&bgcolor=ffffff&data=https%3A%2F%2Fgithub.com%2FDocEmmettBrownPhd%2Freal-world-ready-coach%2Farchive%2Frefs%2Fheads%2Fmain.zip"
+            alt="QR code to download Real World Ready Coach"
+            width="156"
+            height="156"
+          />
+        </div>
         <div class="qr-label">Scan with your phone camera</div>
       </div>
       <div class="download-card">
@@ -299,51 +306,11 @@
 </footer>
 
 <script>
-// Scroll animation
 const rows = document.querySelectorAll('.branch-row');
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.15 });
 rows.forEach(r => obs.observe(r));
-
-// QR code drawn directly on canvas — no library dependency
-(function() {
-  const url = 'https://github.com/DocEmmettBrownPhd/real-world-ready-coach/archive/refs/heads/main.zip';
-  const canvas = document.getElementById('qrcanvas');
-  const size = 150;
-  canvas.width = size;
-  canvas.height = size;
-  const ctx = canvas.getContext('2d');
-
-  // White background
-  ctx.fillStyle = '#ffffff';
-  ctx.fillRect(0, 0, size, size);
-
-  // Dark foreground
-  ctx.fillStyle = '#1a2332';
-
-  // Use a QR API image loaded onto the canvas so it's truly scannable
-  const img = new Image();
-  img.crossOrigin = 'anonymous';
-  img.onload = function() {
-    ctx.clearRect(0, 0, size, size);
-    ctx.fillStyle = '#ffffff';
-    ctx.fillRect(0, 0, size, size);
-    ctx.drawImage(img, 0, 0, size, size);
-  };
-  img.onerror = function() {
-    // Fallback: show text instructions if image fails
-    ctx.fillStyle = '#ffffff';
-    ctx.fillRect(0, 0, size, size);
-    ctx.fillStyle = '#1a2332';
-    ctx.font = 'bold 11px sans-serif';
-    ctx.textAlign = 'center';
-    ctx.fillText('Use Download', size/2, size/2 - 8);
-    ctx.fillText('button below', size/2, size/2 + 10);
-  };
-  // Use a free QR API — no account, no tracking, just the QR image
-  img.src = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=' + encodeURIComponent(url);
-})();
 </script>
 
 </body>
