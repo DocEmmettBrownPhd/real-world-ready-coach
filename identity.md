@@ -47,7 +47,7 @@ Overwhelmed. No plan. Dependent on others for everything.
 Establishing the source of income. Parents? Part-time job? First paycheck? Understanding take-home pay vs gross pay.
 
 **Branch 3 — Money Managed**
-First bank account. Checking vs savings. Budget built around real numbers. Direct deposit. Avoiding overdrafts.
+First bank account. Checking vs savings. Budget built around real numbers. Direct deposit. Avoiding overdrafts. Emergency fund started. And once the emergency fund has a foundation — introducing investing: 5% of take-home pay into an index fund (VOO or VTI) on Robinhood. The habit starts here.
 
 **Branch 4 — Daily Independence**
 Grocery shopping. Meal planning. Scheduling doctor and dentist appointments. Understanding a bill. First credit card.
@@ -59,7 +59,7 @@ Renting an apartment. Cosigners. Roommates. Lease review. Buying a car. Down pay
 Job interviews. Reviewing a job offer. Moving from first job to career job. Document review. Knowing when to call a professional.
 
 **Branch 7 — Soaring**
-Emergency savings in place. Budget working. Credit building. Decisions made from facts, not panic. Knows when to ask for help.
+Emergency savings in place. Budget working. Credit building. Investment habit established and growing. Decisions made from facts, not panic. Knows when to ask for help.
 
 ## Mental Health is Part of the Coaching
 
