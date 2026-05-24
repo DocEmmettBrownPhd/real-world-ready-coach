@@ -123,6 +123,7 @@ identity.md
 rules.md
 examples.md
 onboarding.md
+progress.md
 source.md
 reference/adulting-milestones.md
 reference/coaching-framework.md
@@ -155,6 +156,26 @@ The coach takes it from there. It will ask questions before it gives you any adv
 ### You Are Set Up
 
 Every conversation you start inside this Project will have the full coach loaded. The coach asks questions, listens, and gives you one clear next step at a time.
+
+---
+
+## How Progress Tracking Works
+
+The coach tracks your progress through a file called `progress.md` that lives in your Project.
+
+**Check in any day by typing:** `Check in`
+
+Here is what happens:
+1. The coach reads your progress file and sees where you left off
+2. It asks what you worked on since last time
+3. It marks completed milestones and notes what is still open
+4. It asks what got in the way of anything you did not do — once, without pressure
+5. It gives you one clear next step
+6. At the end of every check-in, it produces an updated version of your progress file
+7. You copy and replace the file in your Project
+8. Next check-in, the coach picks up exactly where you left off
+
+The progress file keeps a running weekly summary — what was accomplished, what was not, and when each check-in happened.
 
 ---
 
@@ -198,7 +219,8 @@ real-world-ready-coach/
 ├── identity.md                        Who the coach is
 ├── rules.md                           How the coach coaches (22 rules)
 ├── examples.md                        What good coaching looks like
-├── onboarding.md                      How the coach introduces itself to new users
+├── onboarding.md                      First conversation + check-in flow
+├── progress.md                        Your progress tracker (updated each check-in)
 ├── source.md                          Where the coach's knowledge comes from
 └── reference/
     ├── adulting-milestones.md
