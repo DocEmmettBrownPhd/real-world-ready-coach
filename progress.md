@@ -37,6 +37,7 @@ Onboarding completed: No
 | Job | — | |
 | Credit score checked | — | |
 | Health insurance | — | |
+| Investment account | — | |
 
 *Filled in during first conversation with the coach.*
 
@@ -93,6 +94,10 @@ Last check-in: Never
 - [ ] Built a first budget based on real take-home pay
 - [ ] Set up a payment reminder or autopay for at least one bill
 - [ ] Started an emergency fund (even $20)
+- [ ] Emergency fund reached $500
+- [ ] Downloaded Robinhood and created an investment account
+- [ ] Made first investment — index fund (VOO or VTI)
+- [ ] Set up recurring investment of 5% of take-home pay on payday
 
 ### Branch 4 — Daily Independence
 - [ ] Built a basic grocery list
@@ -113,7 +118,7 @@ Last check-in: Never
 - [ ] Got a pre-purchase inspection on a used car (if buying)
 
 ### Branch 6 — Career Ready
-- [ ] Practiced answer to “Tell me about yourself”
+- [ ] Practiced answer to "Tell me about yourself"
 - [ ] Prepared a STAR story for a behavioral question
 - [ ] Researched the company before an interview
 - [ ] Reviewed a job offer before accepting
@@ -124,6 +129,7 @@ Last check-in: Never
 - [ ] Emergency savings reached 1 month of expenses
 - [ ] Emergency savings reached 3 months of expenses
 - [ ] Budget working consistently for 3+ months
+- [ ] Investment contribution increased to 10% of take-home pay
 - [ ] Credit score building on track (on-time payments, low utilization)
 - [ ] Annual physical and dental checkup scheduled
 - [ ] Regular exercise, sleep, and mental health habits in place
@@ -155,7 +161,7 @@ Last check-in: Never
 ## How to Update This File
 
 1. Check in with the coach by typing: `Check in`
-2. Answer the coach’s questions about what you did since last time
+2. Answer the coach's questions about what you did since last time
 3. At the end of the conversation, the coach will give you an updated version of this entire file
 4. Copy the full updated file
 5. Go to your Claude Project → Project knowledge → find progress.md → delete it → upload the new version
