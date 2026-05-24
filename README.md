@@ -130,8 +130,10 @@ The coach helps you understand the document, spot possible red flags, and prepar
 real-world-ready-coach/
 ├── README.md                          You are here
 ├── identity.md                        Who the coach is
-├── rules.md                           How the coach coaches
+├── rules.md                           How the coach coaches (22 rules)
 ├── examples.md                        What good coaching looks like
+├── onboarding.md                      How the coach introduces itself to new users
+├── source.md                          Where the coach's knowledge comes from
 └── reference/
     ├── adulting-milestones.md
     ├── coaching-framework.md
