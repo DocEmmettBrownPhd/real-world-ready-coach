@@ -1,6 +1,6 @@
 # Real World Ready Coach
 
-> A folder-based AI coach for young adults ages 17–24 who are leaving the nest and navigating real life for the first time.
+> A folder-based AI coach for young adults ages 17–24 who are leaving the nest and navigating real life for the first time. Great.
 
 Live page: https://docemmettbrownphd.github.io/real-world-ready-coach
 
