@@ -2,32 +2,57 @@
 
 > A folder-based AI coach for young adults ages 17–24 who are leaving the nest and navigating real life for the first time.
 
+Live page: https://docemmettbrownphd.github.io/real-world-ready-coach
+
 ---
 
-## What This Is
+## What It Does
 
-Real World Ready Coach is a personal AI coach you drop into a Claude Project.
+Here is exactly what this coach helps with — and why each piece matters.
 
-It coaches young adults through the real-world milestones nobody teaches you in school:
+### 1. Branch-by-Branch Coaching
+You do not have to figure out where to start. The coach asks you a few questions, finds out where you actually are in life, and starts from there. It walks you through 7 stages — from having no plan to being fully on your feet. You move at your own pace.
 
-- Where your money comes from and how to protect it
-- Opening a bank account and building a budget
-- Grocery shopping and meal planning
-- Renting your first apartment
-- Buying and maintaining a car
-- Preparing for job interviews
-- Reviewing leases, loan documents, bills, and test results
-- Understanding credit scores
-- Scheduling doctor appointments
-- Taking care of your mental health while doing all of the above
+**For parents:** This gives your graduate a structured path that starts where they are, not where you wish they were. Each stage builds on the last.
 
-This is not a knowledge base. It is a coach. It asks questions before it gives advice. It listens. It pushes back when you are about to make a mistake. It gives you one clear next step at a time.
+### 2. Document Review
+About to sign a lease? Got a car loan offer? Received a medical bill you do not understand? Paste it or upload a photo and the coach reads it with you. It tells you in plain English what it says, what looks off, and what questions to ask before you agree to anything.
+
+**For parents:** Young adults sign things they do not fully read. This coach slows them down and flags problems before they become expensive mistakes. Leases, car loans, job offers, medical bills — all covered.
+
+### 3. Gap Assessment
+The coach does not assume you know nothing. In your first conversation, it asks what you already have — a bank account, a car, a job, health insurance, a lease. It maps out what you have covered and what is still missing. Then it focuses on the gaps, not the stuff you already figured out.
+
+**For parents:** Instead of starting over from scratch, the coach finds out what your graduate already has in place and only coaches what is actually missing.
+
+### 4. Goal Tracking
+The coach asks what you actually want — your own place, a car, a career job, financial breathing room. It connects your goals to a real plan. Every step you take is pointed at something you said you wanted, not a generic checklist.
+
+**For parents:** The coach ties your graduate’s own stated goals to the coaching plan. They are more likely to follow through on a plan they helped build.
+
+### 5. Progress Tracking and Check-Ins
+You can check in any day by typing two words: *Check in.* The coach asks what you worked on, marks what you completed, notes what you did not get to, and gives you your next step. It keeps a running weekly log so you can see how far you have come.
+
+**For parents:** The progress file shows a weekly log of what was accomplished and what was not. Your graduate can share it with you anytime.
+
+### 6. Built for Shy and Quiet Users
+If you give short answers, say “I don’t know,” or go quiet when things feel awkward — the coach is built for that. It knows how to ask the question a different way, give you a range to pick from, or just wait. It never makes you feel dumb for not knowing something nobody taught you.
+
+**For parents:** The coaching rules are specifically designed for young adults who shut down under pressure. The coach pulls answers out gently, never pushes more than once on a hard topic, and always leads with a compliment before a correction.
+
+### 7. Mental Health Woven In
+This is not just about money and leases. The coach checks in on how you are actually doing. It normalizes feeling overwhelmed. It talks about sleep, exercise, and therapy the same way it talks about budgets — as things that matter, not extras.
+
+**For parents:** Mental health is built into every stage, not a separate section. The coach treats stress and anxiety as real parts of the adulting process and handles them practically and without judgment.
+
+### 8. Research-Backed Frameworks
+Everything the coach knows comes from real sources — the CFPB, HUD, the FDIC, the USDA, and more. When it tells you how much rent you can afford, or what to look for in a car loan, or how to read a credit score, it is pulling from the same guidance that financial counselors use.
+
+**For parents:** Built on 10 detailed reference frameworks covering every topic, all sourced from federal consumer protection agencies and established financial education research.
 
 ---
 
 ## The 7 Branches
-
-The coach guides you through 7 branches — from overwhelmed to ready.
 
 ```
 BRANCH 1 — Still in the Nest       No plan. No budget. Dependent on others.
@@ -53,70 +78,44 @@ BRANCH 7 — Soaring                 Emergency savings. Stable budget. Ready for
 
 ## How to Set It Up (Step by Step)
 
-This coach runs inside Claude Projects. Here is exactly how to set it up. This guide is written for someone who has never used Claude before.
+This coach runs inside Claude Projects. Written for someone who has never used Claude before.
+
+### Free or paid account?
+
+**Claude Free:** Free accounts let you chat with Claude but may not include Projects in all regions. If you do not see “Projects” after signing in, upgrade to Pro.
+
+**Claude Pro — $20/month (Recommended):** Full access to Projects. This is what the coach requires. Cancel anytime.
 
 ---
 
-### First: Which Account Do You Need?
-
-**Claude.ai Free**
-Free accounts can use Claude but may not have access to Projects depending on your region. If you do not see “Projects” in the left sidebar after signing in, you will need to upgrade.
-
-**Claude.ai Pro — $20/month (Recommended)**
-Pro accounts have full access to Projects. This is what the coach is built for. Projects let the coach read all the uploaded files and stay in character across every conversation.
-
----
-
-### Step 1 — Download the Coach Folder
-
-Click this link to download the coach as a ZIP file:
+### Step 1 — Download the coach folder
 
 **[Download Real World Ready Coach (ZIP)](https://github.com/DocEmmettBrownPhd/real-world-ready-coach/archive/refs/heads/main.zip)**
 
-After downloading:
-- Find the ZIP file in your Downloads folder
-- Unzip it (double-click on Mac — right-click → Extract All on Windows)
-- You will see a folder called `real-world-ready-coach-main`
-- Keep that folder open. You will need it in Step 5.
+After downloading: find the ZIP in your Downloads folder. Double-click to unzip (Mac) or right-click → Extract All (Windows). You will have a folder called `real-world-ready-coach-main`. Leave it open.
 
----
+### Step 2 — Create a Claude account
 
-### Step 2 — Create a Claude Account
+Go to **[claude.ai](https://claude.ai)** or **[claude.com](https://claude.com)** — both go to the same place. Click **Sign up**. Enter your email, create a password, and confirm from the verification email Claude sends you.
 
-Go to **[claude.ai](https://claude.ai)** and create an account. It takes about two minutes. Use your email address.
+Already have an account? Sign in and skip to Step 3.
 
-Already have an account? Skip to Step 3.
+### Step 3 — Check that you have Projects
 
----
+After signing in, look at the left sidebar for a section called **Projects**.
 
-### Step 3 — Check That You Have Access to Projects
+- **See Projects:** Move to Step 4.
+- **Do not see Projects:** Click your name or account icon at the bottom left → choose **Upgrade to Pro** → follow the steps ($20/month, cancel anytime). Then continue.
 
-After signing in, look at the left sidebar. You should see a section called **Projects**.
+### Step 4 — Create a new Project
 
-If you do not see it, you will need to upgrade to Pro:
-- Go to **[claude.ai/settings/billing](https://claude.ai/settings/billing)**
-- Choose the Pro plan ($20/month)
-- You can cancel at any time
+Click **Projects** in the left sidebar, then click **+ New project**. A box appears asking for a name. Type anything — *My Coach*, *Real World Ready*, *Adulting Help*. Click **Create** or press Enter.
 
-Once you see **Projects** in the sidebar, continue to Step 4.
+A Project is a private space where you upload files. Claude reads those files before every conversation so it always knows who it is, what your goals are, and where you left off.
 
----
+### Step 5 — Upload the coach files
 
-### Step 4 — Create a New Project
-
-- In the left sidebar, click **Projects**
-- Click **+ New project**
-- Name it anything you want — something like *My Coach* or *Real World Ready* works fine
-
-A Project is a special space in Claude where you can upload files that Claude reads before every conversation. This is how the coach knows who it is and how to respond to you.
-
----
-
-### Step 5 — Upload the Coach Files
-
-Inside your new Project, look for a section called **Project knowledge** or **Add content**. Click it to upload files.
-
-Upload these files from the folder you downloaded in Step 1:
+Inside your Project, click **Project knowledge** or **Add content**. Upload these files from the folder you downloaded:
 
 ```
 identity.md
@@ -137,65 +136,46 @@ reference/grocery-framework.md
 reference/health-appointments-framework.md
 ```
 
-You do not need to upload `README.md` or `submission.md` — those are for reference only.
+Total: 16 files. Do not upload README.md or submission.md.
 
----
+### Step 6 — Start your first conversation
 
-### Step 6 — Start Your First Conversation
+Click **Start chat** inside your Project. Type something like:
 
-Click **Start chat** inside the Project. The coach will introduce itself, explain what it does, and ask you a few questions to find out where you are starting from.
+> “I just graduated. I don’t really know where to start with money or any of this adult stuff.”
 
-You do not need to say anything special. Just type something like:
+The coach introduces itself, asks questions to understand where you are starting from, and begins coaching. Always start from inside your Project — not from the main Claude chat screen.
 
-> “I just graduated. I don’t really know where to start with money or any of this stuff.”
+### Step 7 — Check in any day
 
-The coach takes it from there. It will ask questions before it gives you any advice.
+After your first conversation, the coach gives you an updated `progress.md` file. Replace the one in your Project with the new version. This is how the coach remembers where you left off.
 
----
+Any time you return, type: **Check in**
 
-### You Are Set Up
-
-Every conversation you start inside this Project will have the full coach loaded. The coach asks questions, listens, and gives you one clear next step at a time.
+The coach reads your progress file, asks what you worked on, updates your tracker, and gives you your next step.
 
 ---
 
 ## How Progress Tracking Works
 
-The coach tracks your progress through a file called `progress.md` that lives in your Project.
+The coach tracks your progress through `progress.md` — a file that lives in your Project and gets updated after every check-in.
 
-**Check in any day by typing:** `Check in`
-
-Here is what happens:
-1. The coach reads your progress file and sees where you left off
-2. It asks what you worked on since last time
-3. It marks completed milestones and notes what is still open
-4. It asks what got in the way of anything you did not do — once, without pressure
-5. It gives you one clear next step
-6. At the end of every check-in, it produces an updated version of your progress file
-7. You copy and replace the file in your Project
-8. Next check-in, the coach picks up exactly where you left off
-
-The progress file keeps a running weekly summary — what was accomplished, what was not, and when each check-in happened.
+Each check-in:
+1. Coach reads the file and sees where you left off
+2. Asks what you worked on since last time
+3. Marks completed milestones, notes what is still open
+4. Asks what got in the way of anything undone — once, without pressure
+5. Gives one clear next step
+6. Produces an updated progress file with a new weekly summary row
+7. You replace the file in your Project
 
 ---
 
-## Sharing With Someone Else
+## Document Review
 
-**Option 1 — Send the download link**
-Share this page or the GitHub link. They download the ZIP and follow the 6 steps above.
+Paste or upload any important document and the coach reviews it before you sign, pay, or agree.
 
-**Option 2 — Email the files**
-Download the folder, attach the files to an email, and send it with a link to this page for setup instructions.
-
-It is free to download. Works on any device with a browser. No app required.
-
----
-
-## Document Review Mode
-
-Paste or upload any important document and the coach will help you review it before you sign, pay, or agree.
-
-Supported documents:
+Supported:
 - Apartment leases
 - Car loan paperwork
 - Credit card offers
@@ -207,7 +187,7 @@ Supported documents:
 - Financial aid letters
 - Insurance documents
 
-The coach explains the document in plain English, identifies possible red flags, and gives you questions to ask before you make a decision. It is not a lawyer or doctor — it is a coach helping you slow down and think clearly.
+The coach is not a lawyer or doctor. It helps you understand, spot red flags, and prepare smart questions.
 
 ---
 
@@ -221,7 +201,7 @@ real-world-ready-coach/
 ├── examples.md                        What good coaching looks like
 ├── onboarding.md                      First conversation + check-in flow
 ├── progress.md                        Your progress tracker (updated each check-in)
-├── source.md                          Where the coach's knowledge comes from
+├── source.md                          Where the coach’s knowledge comes from
 └── reference/
     ├── adulting-milestones.md
     ├── coaching-framework.md
@@ -241,7 +221,7 @@ real-world-ready-coach/
 
 This coach does not provide legal, medical, tax, financial, lending, insurance, or mental health therapy services.
 
-It helps you understand documents, prepare questions, spot red flags, and plan next steps. It recommends a qualified professional whenever the issue is serious, urgent, or outside the scope of basic coaching.
+It helps you understand documents, prepare questions, spot red flags, and plan next steps. It recommends a qualified professional whenever the issue is serious, urgent, or outside basic coaching.
 
 ---
 
