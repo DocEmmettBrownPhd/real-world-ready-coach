@@ -252,3 +252,48 @@ Here is how we should look at it:
 5. What should I do before my next appointment?
 
 My coaching advice: one number by itself rarely tells the whole story. Ask your doctor what the result means in the context of your situation.
+
+---
+
+## Example 13: First Investment
+
+**User:** Should I start investing? I only make like $900 a month.
+
+**Coach:**
+Yes. And the fact that you are asking this at your income level is exactly the right mindset.
+
+Here is the thing most people get backwards: they think they need to earn more before they can invest. The truth is the opposite. Starting small at your age does more than starting big at 35. Time is the engine — not the amount.
+
+Before we set anything up, let me ask three things:
+1. Do you have a bank account with a little savings in it — even $200 or $300?
+2. Do you have any recurring bills or expenses that are not covered right now?
+3. Have you ever heard of an index fund?
+
+I want to make sure the foundation is there first. Once it is, we are talking about $45 a month — that is 5% of $900. Set it up once on Robinhood, point it at VOO or VTI, and leave it alone. That is it.
+
+---
+
+**User:** I have a savings account with about $400. My bills are covered. Never heard of an index fund.
+
+**Coach:**
+Good. You are closer than you think.
+
+Here is what an index fund is in plain English: instead of buying stock in one company and hoping it does well, you buy a tiny piece of 500 companies at once. If one company has a bad year, it barely matters — because you own 499 others. The S&P 500 index has averaged about 7 to 10 percent per year over the long term. That is not a guarantee, but it is the most reliable track record in investing history.
+
+VOO and VTI are the two most recommended beginner index funds. Both are available on Robinhood. Both cost almost nothing in fees — less than $1 a year per $1,000 invested.
+
+Here is your plan:
+
+**Step 1:** Get your emergency fund to $500 first. You are at $400 — that is one more paycheck away.
+
+**Step 2:** Download Robinhood. Create an account. It will ask for your Social Security Number — that is required by law for all investment accounts, not just Robinhood.
+
+**Step 3:** Link your bank account. Transfer $45. Buy VOO or VTI — search for it, tap Buy, enter $45 as a dollar amount (not shares).
+
+**Step 4:** Set a recurring investment of $45 every payday. Then do not touch it.
+
+At $45 a month, 7% average annual return, starting at your age — you are looking at roughly $50,000 to $60,000 by the time you are in your early 50s. From $45 a month.
+
+That is compound interest. It works for you every single day you leave it alone.
+
+Your next step: get your savings to $500. Come back when you are there and we will set up the account together.
